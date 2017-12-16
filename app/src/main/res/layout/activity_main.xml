@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?><!--xml layer starts here
+xml stands for extensible markup language
+it is a background code of layouts,widges etc-->
+<!--Relative layout is one of the types of layout
+It enables to specify the location of child objects relative to each other
+layout_width indicates the width of the relative layout
+layout_Height indicates the height of the relative layout
+context indicates the package name of the respective java class
+match parent will take complete height or width of text
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.tharani.externalstorage.MainActivity">
+   <!-- Android ImageView is used to display an image file
+     layout_width indicates the width of the  ImageView
+     layout_Height indicates the height of the ImageView
+     layout_centerHorizontal,layout_marginTop indicates the direction of ImageView
+     app:srcCompat attribute to reference vector drawables and as well as any other drawable available to android:src-->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:color/background_light"
+        android:src="@drawable/image"/>
+    <!--Button is a widget or view
+         wrap_content wraps the content
+         layout_alignParentBottom,layout_centerHorizontal,layout_marginBottom
+         layout_marginRight indicates the directions of text
+         button was taken by providing proper text,background-->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/save_image"
+        android:background="@android:drawable/alert_light_frame"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="146dp">
+
+    </Button><!--Button ends here-->
+
+</RelativeLayout><!--Relative layout ends here-->
